@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="shortcut icon" href="./assets/images/fav_icon.jpg" />
+    <title>Minha primeira API NodeJs Express</title>
+</head>
+<body>
+    <section id="section">
+        <div id="topBg">
+            <p id="topP">FRONT API</p>
+        </div>
+        <div id="formStyles">
+            <h1>FORMULÁRIO DE CADASTRO DE USUÁRIOS</h1>
+            <p>Para inserir usuários na lista, insira os dados abaixo.</p>
+            <p id="result"></p>
+            <form id="form">
+                <input id="inputName" type="text" placeholder="Nome completo"/>
+                <input id="inputEmail" type="text"placeholder="E-mail" />
+                <button id="buttonCadastro" type="button">Cadastrar</button>
+            </form>
+        </div>
+        <form id="update"></form>
+        <button type="button" id="buttonListar">Listar Usuários</button>
+        <table id="table">
+            <tbody id="tbody">
+                
+            </tbody>
+        </table>
+    </section>
+    <script type="module" src="index.js"></script>
+</body>
+</html>

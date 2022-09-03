@@ -1,0 +1,33 @@
+# Testando rota POST!!
+POST http://localhost:3000/usuario
+Content-Type: application/json
+
+{
+    "nome": "Amadeu",
+    "email": "amama@gmail.com"
+}
+###
+
+# Testando rota GET!!
+GET http://localhost:3000/usuarios
+Content-Type: application/json
+###
+
+# Testando rota PUT!!
+PUT http://localhost:3000/usuario/31
+Content-Type: application/json
+
+{
+    "nome": "Joao",
+    "email": "JoaoAtualizado@gmail.com"
+}
+###
+
+# Testando rota DELETE!!
+DELETE http://localhost:3000/usuario/22
+Content-Type: application/json
+###
+
+# Testando rota GET com ID!!
+GET http://localhost:3000/usuario/1
+Content-Type: application/json

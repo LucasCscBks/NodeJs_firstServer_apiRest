@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#topBg {
+    width: 90%;
+    height: 80px;
+    background-color: rgba(0,200,0, 1);
+    margin-left: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 0px 0px;
+}
+#topP {
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    color: rgba(240,240,240, 1);
+}
+th,td,tr {
+    border: solid 1.5px;
+    border-collapse: collapse;
+}
+#formStyles {
+    width: 90%;
+    height: 80px;
+    background-color: #fff;
+    margin-left: 5vw;
+}
+img {
+    width: 35px;
+}
+.deletes:hover, .edits:hover {
+    cursor: pointer;
+}
