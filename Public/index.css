@@ -2,6 +2,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+#section {
+    
 }
 #topBg {
     width: 90%;
@@ -15,23 +19,122 @@
 }
 #topP {
     font-size: 40px;
-    font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
     color: rgba(240,240,240, 1);
 }
-th,td,tr {
-    border: solid 1.5px;
-    border-collapse: collapse;
-}
 #formStyles {
-    width: 90%;
+    width: 84%;
     height: 80px;
     background-color: #fff;
-    margin-left: 5vw;
+    margin-left: 8vw;
+}
+#formTitle {
+    padding-top: 10px;
+}
+#formP {
+    border-bottom: solid 1px rgba(0,200,0, 1);
+}
+#form {
+    margin-top: 10px;
+}
+#inputName, #inputEmail,.inputs {
+    width: 400px;
+    font-size: 25px;
+    margin-right: 10px;
+    border: solid 1px;
+    border-color: rgba(0,200,0, 1);
+}
+#inputName::placeholder,#inputEmail::placeholder , .inputs::placeholder {
+    font-size: 20px;
+    padding-left: 10px;
+}
+#inputName:focus,#inputEmail , .inputs {
+    outline: 0;
+}
+#buttonCadastro , #updateButton{
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    color: #fff;
+    background-color: rgba(0,200,0, 1);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 2px 2px rgb(240, 8, 228);
+}
+#buttonCadastro:hover,#buttonListar:hover, #updateButton:hover {
+    cursor: pointer;
+}
+#buttonCadastro:active, #buttonListar:active, #updateButton:active {
+    opacity: 0.7;
+}
+#listarDiv {
+    border-bottom: rgba(0,200,0, 1) solid 1.5px;
+    width: 84%;
+    margin-left: 8vw;
+    margin-top: 40px;
+    padding-bottom: 10px;
+    display: flex;
+}
+#buttonListar {
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    color: #fff;
+    background-color: rgba(0,200,0, 1);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 2px 2px rgb(240, 8, 228);
+}
+#listTitle {
+    margin-top: 20px;
+    margin-left: 8vw;
+    font-size: 26px;
+    font-weight: 700;
+    width: 84%;
+}
+#listP {
+    border-bottom: rgba(0,200,0, 1) solid 1.5px;
+    margin-left: 8vw;
+    width: 84%;
+}
+#update {
+    width: 84%;
+    margin-left: 8vw;
+    margin-top: 15px;
+}
+#table {
+    width: 84%;
+    margin-left: 8vw;
+    margin-top: 15px;
+}
+th {
+    background-color: rgba(0,200,0, 1);
+    color: #fff;
+    height: 45px;
+    font-size: 18px;
+}
+tr:nth-child(even) {
+    background: rgb(148, 245, 245);
+}
+td {
+    text-align: center;
 }
 img {
     width: 35px;
 }
 .deletes:hover, .edits:hover {
     cursor: pointer;
+}
+#result {
+    height: 40px;
+    box-shadow: 0px 0px 4px 4px rgba(240, 0, 0,1);
+    margin-left: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: rgba(240, 0, 0,1);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 10px;
+    display: none; 
 }

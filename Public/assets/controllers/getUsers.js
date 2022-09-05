@@ -10,6 +10,7 @@ const optionsDelete = {
 export function listUsers() {
     const result = document.querySelector('#result')
     result.innerHTML = ''
+    result.style.display = 'none'
     fetch(`http://localhost:3000/usuarios`)
     .then((res) => {
         // console.log(res)
@@ -50,6 +51,10 @@ export function listUsers() {
                     listUsers()
                     console.log(data)
                     result.innerHTML = data
+                    result.style.display = 'block'
+                    setTimeout(() => {
+                        result.style.display = 'none'
+                    }, 2500)
                 })
             })
         }
@@ -63,10 +68,8 @@ export function listUsers() {
                 // console.log(ident)
                 const updateForm = document.querySelector('#update');
                 updateForm.style.display = 'block'
-                updateForm.innerHTML = `<label>Nome: </label>
-                <input type="text" id="updateName"/>
-                <label>Email: </label>
-                <input type="text" id="updateEmail" />
+                updateForm.innerHTML = `<input type="text" id="updateName" class="inputs" placeholder="Nome completo"/>
+                <input type="text" id="updateEmail" class="inputs" placeholder="E-mail"/>
                 <button type="button" id="updateButton">Atualizar</button>`
                 const updateName = document.querySelector('#updateName');
                 const updateEmail = document.querySelector('#updateEmail');
@@ -95,6 +98,10 @@ export function listUsers() {
                         listUsers()
                         console.log(data)
                         result.innerHTML = data
+                        result.style.display = 'block'
+                        setTimeout(() => {
+                            result.style.display = 'none'
+                        }, 2500)
                     })
                     updateForm.style.display = 'none'
                     // console.log(updateUser)

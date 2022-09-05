@@ -26,6 +26,10 @@ export function createUser() {
         console.log(data)
         const result = document.querySelector('#result')
         result.innerHTML = data
+        result.style.display = 'block'
+        setTimeout(() => {
+            result.style.display = 'none'
+        }, 2500)
     })
     .catch((err) => {
         console.log(err)
